@@ -66,7 +66,7 @@ register();
           <div class="relative lg:h-[700px] flex items-center justify-center opacity-0 animate-fade-in mt-10 lg:mt-0">
             <div class="relative w-full max-w-[480px] aspect-[4/5] rounded-[2rem] overflow-hidden shadow-2xl shadow-forest/10 z-10 group">
               <div class="absolute inset-0 bg-forest/10 mix-blend-overlay z-10 pointer-events-none group-hover:bg-transparent transition-colors duration-500"></div>
-              <img src="/images/wonderfulbali-ai-generated-8492244.jpg" alt="Serene Treatment Room" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" />
+              <img src="assets/images/wonderfulbali-ai-generated-8492244.jpg" alt="Serene Treatment Room" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" />
             </div>
             
             <div class="absolute top-1/4 -left-6 lg:-left-16 bg-white p-4 lg:p-5 rounded-2xl shadow-xl shadow-dark/5 z-20 hidden sm:flex items-center gap-4">
@@ -106,7 +106,7 @@ register();
           <div class="grid lg:grid-cols-2 gap-16 items-center">
             <div class="relative group">
               <div class="aspect-square rounded-[2rem] overflow-hidden">
-                <img src="/images/wonderfulbali-ayurveda-8492246_1920.jpg" alt="Ayurvedic Oils" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                <img src="assets/images/wonderfulbali-ayurveda-8492246_1920.jpg" alt="Ayurvedic Oils" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
               </div>
               <div class="absolute -bottom-8 -right-8 bg-sage p-10 rounded-[2rem] hidden md:block shadow-lg hover:-translate-y-2 transition-transform duration-300">
                 <p class="text-4xl font-serif font-bold text-primary mb-2">Prakriti</p>
@@ -193,7 +193,7 @@ register();
             </div>
             
             <div class="relative group overflow-hidden rounded-[2rem]">
-              <img src="/images/sarahsever-ai-generated-8221928_1920.png" alt="Ayurvedic Doctor Consultation" class="shadow-2xl object-cover aspect-[4/5] w-full max-w-lg ml-auto transition-transform duration-700 group-hover:scale-105" />
+              <img src="assets/images/sarahsever-ai-generated-8221928_1920.png" alt="Ayurvedic Doctor Consultation" class="shadow-2xl object-cover aspect-[4/5] w-full max-w-lg ml-auto transition-transform duration-700 group-hover:scale-105" />
               <div class="absolute inset-0 bg-gradient-to-t from-dark/80 via-dark/20 to-transparent max-w-lg ml-auto"></div>
               <div class="absolute bottom-8 left-8 lg:left-12 right-8 text-white">
                 <p class="text-2xl font-serif italic mb-2">"Health is a state of complete harmony of the body, mind and spirit."</p>
@@ -338,19 +338,19 @@ export class HomeComponent {
       title: 'Panchakarma Detox',
       desc: 'A comprehensive 5-step detoxification program to eliminate deep-rooted toxins and restore immune vitality.',
       icon: 'sparkles',
-      image: '/images/sarahsever-ai-generated-8221928_1920.png'
+      image: 'assets/images/sarahsever-ai-generated-8221928_1920.png'
     },
     {
       title: 'Abhyanga Massage',
       desc: 'Warm herbal oil massage customized to your dosha, designed to calm the nervous system and nourish the skin.',
       icon: 'droplets',
-      image: '/images/jobinscaria-man-9086419_1920.jpg'
+      image: 'assets/images/jobinscaria-man-9086419_1920.jpg'
     },
     {
       title: 'Ayurvedic Consultation',
       desc: 'In-depth health assessment by our expert doctors to determine your unique body constitution (Prakriti).',
       icon: 'heart-pulse',
-      image: '/images/guvo59-woman-3701713_1920.jpg'
+      image: 'assets/images/guvo59-woman-3701713_1920.jpg'
     }
   ];
 
