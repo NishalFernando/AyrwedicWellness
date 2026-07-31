@@ -5,7 +5,11 @@ import { LucideAngularModule, Menu, X } from 'lucide-angular';
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [RouterLink, RouterLinkActive, LucideAngularModule],
+  imports: [
+    RouterLink,
+    RouterLinkActive,
+    LucideAngularModule
+  ],
   template: `
     <nav [class]="'fixed top-0 left-0 w-full z-50 transition-all duration-300 ' + (isScrolled() ? 'bg-cream/95 backdrop-blur-md shadow-md py-4' : 'bg-transparent py-6')">
       <div class="container mx-auto px-6 lg:px-12 flex justify-between items-center">
@@ -58,15 +62,20 @@ import { LucideAngularModule, Menu, X } from 'lucide-angular';
         </div>
 
         <!-- Mobile Menu Button -->
-        <button class="md:hidden text-primary p-2 relative z-50 focus:outline-none" (click)="toggleMenu()">
-          <lucide-icon [name]="isMenuOpen() ? 'x' : 'menu'" [size]="28" class="transition-transform duration-300" [class.rotate-90]="isMenuOpen()"></lucide-icon>
+        <button class="md:hidden text-primary p-2 fixed right-6 top-6 z-[60] focus:outline-none" (click)="toggleMenu()">
+           <lucide-icon
+            [img]="isMenuOpen() ? X : Menu"
+            [size]="28">
+          </lucide-icon>
+          
         </button>
       </div>
 
       <!-- Mobile Menu -->
-      <div class="md:hidden fixed inset-0 bg-cream z-40 transition-transform duration-300 ease-in-out transform flex flex-col pt-24 px-6 gap-6"
-           [class.translate-x-0]="isMenuOpen()" 
-           [class.translate-x-full]="!isMenuOpen()">
+      <div
+        class="md:hidden fixed inset-0 bg-cream z-[55] flex flex-col pt-24 px-6 gap-6 transition-transform duration-300 ease-in-out"
+        [class.translate-x-0]="isMenuOpen()"
+        [class.translate-x-full]="!isMenuOpen()">
         
         <a routerLink="/" routerLinkActive="text-primary font-bold" [routerLinkActiveOptions]="{exact: true}" class="text-2xl text-dark/80 font-serif" (click)="closeMenu()">Home</a>
         <a routerLink="/about-us" routerLinkActive="text-primary font-bold" class="text-2xl text-dark/80 font-serif" (click)="closeMenu()">About Us</a>
